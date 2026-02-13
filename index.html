@@ -9,10 +9,22 @@
   <div class="container">
     <div class="card">
       <h2>Add Event</h2>
+      <form>
+        <input type="text" placeholder="Event title" /><br>
+        <input type="date" /><br>
+        <select>
+          <option>Select category</option>
+          <option>College</option>
+          <option>Work</option>
+        </select><br>
+        <textarea placeholder="Description"></textarea><br>
+        <button>Add Event</button>
+      </form>
     </div>
 
     <div class="card">
       <h2>My Events</h2>
+      <div id="eventList"></div>
     </div>
   </div>
 </body>
