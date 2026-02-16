@@ -3,33 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <title>Smart Event Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Smart Event Dashboard</h1>
 
   <div class="container">
+    <!-- Add Event -->
     <div class="card">
-      <h2>Add Event</h2>
+      <h2>Add New Event</h2>
       <form id="eventForm">
-        <input type="text" id="title" placeholder="Event title" /><br>
-        <input type="date" id="date" /><br>
-        <select id="category">
-          <option value="">Select category</option>
+        <input type="text" id="title" placeholder="Event Title" required />
+        <input type="date" id="date" required />
+
+        <select id="category" required>
+          <option value="">Select Category</option>
           <option value="College">College</option>
           <option value="Work">Work</option>
-        </select><br>
-        <textarea id="description" placeholder="Description"></textarea><br>
+          <option value="Personal">Personal</option>
+        </select>
+
+        <textarea id="description" placeholder="Description"></textarea>
         <button type="submit">Add Event</button>
       </form>
     </div>
 
+    <!-- Events List -->
     <div class="card">
       <h2>My Events</h2>
-      <div id="eventList"></div>
+
+      <div class="actions">
+        <button id="clearBtn">Clear All</button>
+        <button id="sampleBtn">Add Sample</button>
+      </div>
+
+      <div id="eventList">
+        <p class="empty">No events yet.</p>
+      </div>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
