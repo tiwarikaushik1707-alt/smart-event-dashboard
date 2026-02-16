@@ -1,5 +1,5 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #eef2f7;
   padding: 20px;
 }
@@ -10,7 +10,18 @@ body {
 }
 
 .card {
-  background: white;
+  background: #fff;
   padding: 15px;
   border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.event {
+  border: 1px solid #ddd;
+  padding: 6px;
+  margin-bottom: 6px;
+}
+
+.highlight {
+  background: #fff4c2;
 }
