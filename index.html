@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
   <title>Smart Event Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Smart Event Dashboard</h1>
@@ -9,16 +11,16 @@
   <div class="container">
     <div class="card">
       <h2>Add Event</h2>
-      <form>
-        <input type="text" placeholder="Event title" /><br>
-        <input type="date" /><br>
-        <select>
-          <option>Select category</option>
-          <option>College</option>
-          <option>Work</option>
+      <form id="eventForm">
+        <input type="text" id="title" placeholder="Event title" /><br>
+        <input type="date" id="date" /><br>
+        <select id="category">
+          <option value="">Select category</option>
+          <option value="College">College</option>
+          <option value="Work">Work</option>
         </select><br>
-        <textarea placeholder="Description"></textarea><br>
-        <button>Add Event</button>
+        <textarea id="description" placeholder="Description"></textarea><br>
+        <button type="submit">Add Event</button>
       </form>
     </div>
 
@@ -27,5 +29,7 @@
       <div id="eventList"></div>
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
